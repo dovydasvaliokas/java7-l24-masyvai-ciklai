@@ -14,6 +14,11 @@ public class MasyvoPerejimasForEach {
 
     }
 
+    /**
+     * Funkcija nuskaito masyvą iš konsolės
+     * @param skaitytuvas scanner objektas iš kur skaityti (iš konsolės)
+     * @return String[] tipo masyvą (žodžių masyvą)
+     */
     public static String[] masyvoNuskaitymasIsKonsoles(Scanner skaitytuvas) {
         System.out.println("Įveskite kiek žodžių bus masyve: ");
         int n = skaitytuvas.nextInt();
@@ -28,12 +33,22 @@ public class MasyvoPerejimasForEach {
         return masyvas;
     }
 
-
+    /**
+     * Funkcija nuskaito vieną žodį iš konsolės
+     * @param skaitytuvas scanner objektas iš kur skaityti (iš konsolės)
+     * @return String tipo kintamąjį - vieną (ieškomą) žodį, kurio ieškos masyve.
+     */
     public static String nuskaitoIeskomaZodi(Scanner skaitytuvas) {
         System.out.println("Įveskite ieškomą žodį: ");
         return skaitytuvas.nextLine();
     }
 
+    /**
+     * Funkcija suranda ar žodis yra masyve.
+     * @param masyvas kur ieškome
+     * @param ieskomasZodis ką ieškome
+     * @return grąžina true, jei žodis yra masyve; grąžina false, jei žodžio nėra masyve
+     */
     public static boolean arYraZodisMasyve(String[] masyvas, String ieskomasZodis) {
         for (String elementas : masyvas) {
             if (ieskomasZodis.equals(elementas)) {

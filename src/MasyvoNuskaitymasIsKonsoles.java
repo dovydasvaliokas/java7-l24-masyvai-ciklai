@@ -10,6 +10,10 @@ public class MasyvoNuskaitymasIsKonsoles {
 
     }
 
+    /**
+     * Funkcija nuskaito ir išsaugo masyvą iš konsolės.
+     * @return nuskaitytą double[] masyvą
+     */
     public static double[] masyvoNuskaitymasIsKonsoles() {
         Scanner skaitytuvas = new Scanner(System.in);
         System.out.println("Įveskite kiek skaičių bus masyve: ");
